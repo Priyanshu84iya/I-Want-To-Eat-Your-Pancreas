@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.main img{
+    vertical-align: bottom;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+h3.sec_title {
+    font-size: 36px;
+    color: #ff5e75;
+}
+
+dd.line{
+    border-bottom: #E91E63;
+    border-style: double;
+}
+
+ dt.days{
+ background-color: #fce0e4;
+}

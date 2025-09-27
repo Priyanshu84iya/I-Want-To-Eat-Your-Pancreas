@@ -1,0 +1,686 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  background: #fff;
+}
+@media only screen and (min-width: 769px) {
+  body {
+    min-width: 1200px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.wrapper {
+  display: none;
+}
+
+.pink {
+  color: #fa70b5;
+}
+
+header {
+  position: relative;
+}
+header h1 {
+  z-index: 5;
+}
+@media only screen and (min-width: 769px) {
+  header h1 {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    background: url("../img/img_header_sp.jpg") no-repeat;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  header h1 {
+    padding: 57px 0;
+  }
+}
+
+.info {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-weight: 500;
+}
+.info p.lead strong {
+  display: inline-block;
+  color: #fa70b5;
+}
+.info .present {
+  letter-spacing: -.4em;
+}
+.info .present li {
+  vertical-align: top;
+  display: inline-block;
+  letter-spacing: normal;
+}
+.info .present li .present_name {
+  color: #fa70b5;
+}
+@media only screen and (min-width: 769px) {
+  .info {
+    padding-bottom: 105px;
+  }
+  .info p.lead {
+    padding: 76px 0 86px;
+  }
+  .info p.lead strong {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  .info p.lead span {
+    font-size: 20px;
+  }
+  .info h2 {
+    margin-bottom: 44px;
+  }
+  .info h2 img {
+    height: 74px;
+  }
+  .info .present {
+    position: relative;
+    margin-top: 44px;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  .info .present:before {
+    content: " ";
+    position: absolute;
+    top: -84px;
+    left: 50%;
+    width: 1120px;
+    height: 966px;
+    background: url("../img/bg_petal_pc.png") no-repeat;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  .info .present li {
+    width: 300px;
+    margin: 0 20px 40px;
+  }
+  .info .present li .present_name {
+    padding: 28px 0 10px;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  .info .present li .present_name span {
+    font-size: 22px;
+  }
+  .info .present li .present_num {
+    font-size: 16px;
+  }
+  .info h3 {
+    padding: 50px 0 32px;
+    font-size: 27px;
+  }
+  .info .bnrlist {
+    letter-spacing: -.4em;
+  }
+  .info .bnrlist li {
+    display: inline-block;
+    margin: 0 10px;
+    -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  .info .bnrlist li:hover {
+    opacity: .6;
+  }
+  .info .bnrlist li img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info {
+    padding-bottom: 56px;
+  }
+  .info p.lead {
+    padding: 38px 0 60px;
+  }
+  .info p.lead strong {
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding-bottom: 14px;
+  }
+  .info p.lead span {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  .info .present {
+    position: relative;
+  }
+  .info .present:before {
+    content: " ";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 218%;
+    background: url("../img/bg_petal_sp.png") no-repeat;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index: 5;
+  }
+  .info .present li {
+    width: 42.66%;
+    margin: 25px 2% 6px;
+  }
+  .info .present li figure {
+    position: relative;
+  }
+  .info .present li .present_name {
+    padding: 14px 0 6px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .info .present li .present_name span {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  .info .present li .present_num {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .info h3 {
+    padding: 46px 0 16px;
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  .info .bnrlist {
+    letter-spacing: -.4em;
+  }
+  .info .bnrlist li {
+    display: inline-block;
+    margin: 0 1%;
+    width: 46%;
+  }
+}
+
+.howto .limit {
+  font-weight: 500;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+}
+.howto .step li.step_item {
+  position: relative;
+  background: #FFF;
+}
+.howto .attlist {
+  text-align: left;
+}
+.howto .attlist li {
+  text-indent: -1rem;
+  padding-left: 1rem;
+  line-height: 1.6;
+}
+@media only screen and (min-width: 769px) {
+  .howto {
+    background: url("../img/bg_howto_pc.jpg") top center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 104px 0 80px;
+  }
+  .howto h2 img {
+    height: 74px;
+  }
+  .howto .limit {
+    padding: 50px 0 32px;
+    font-size: 27px;
+  }
+  .howto .step {
+    width: 840px;
+    margin: auto;
+  }
+  .howto .step li.step_item {
+    margin: 0 auto 55px;
+    padding: 48px 0 24px;
+  }
+  .howto .step li.step_item:after {
+    content: " ";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 840px;
+    height: 28px;
+    background: url("../img/frame_bottom_pc.png") no-repeat top center;
+  }
+  .howto .step li.step_item:last-child:after {
+    background: url("../img/frame_bottom02_pc.png") no-repeat top center;
+  }
+  .howto .step li.step_item .step_num {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .howto .step li.step_item .step_num img {
+    height: 34px;
+  }
+  .howto .step li.step_item .detail p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .howto .step li.step_item .detail .btn {
+    cursor: pointer;
+    margin-top: 24px;
+    -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  .howto .step li.step_item .detail .btn img {
+    width: 268px;
+  }
+  .howto .step li.step_item .detail .btn:hover {
+    opacity: .6;
+  }
+  .howto .step li.step_item .detail .img_area {
+    margin: 15px 0 5px;
+    letter-spacing: -.4em;
+  }
+  .howto .step li.step_item .detail .img_area .img {
+    display: inline-block;
+    width: 178px;
+    margin: 0 2.5px 5px;
+    background: #d6d6d6;
+  }
+  .howto .step li.step_item .detail .img_area .img img {
+    width: 100%;
+  }
+  .howto .step li.step_item .detail .att {
+    font-size: 12px;
+  }
+  .howto .step li.step_item .detail .attlist {
+    width: 600px;
+    margin: 18px auto 0;
+    text-align: left;
+    font-size: 13px;
+  }
+  .howto .attention {
+    text-align: left;
+    width: 810px;
+    margin: auto;
+    font-size: 13px;
+  }
+  .howto .attention h3 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .howto {
+    padding: 60px 0 56px;
+    background: url("../img/bg_howto_sp.jpg") top center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .howto .limit {
+    padding: 26px 0 33px;
+    font-size: 19px;
+    font-size: 1.9rem;
+  }
+  .howto .step {
+    margin: auto;
+  }
+  .howto .step li.step_item {
+    width: 94.66%;
+    margin: 0 auto 55px;
+    padding: 28px 0 10px;
+  }
+  .howto .step li.step_item:after {
+    content: " ";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: url("../img/frame_bottom_sp.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .howto .step li.step_item:last-child:after {
+    background: url("../img/frame_bottom02_sp.png") no-repeat top center;
+  }
+  .howto .step li.step_item .step_num {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    width: 16%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .howto .step li.step_item .detail p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .howto .step li.step_item .detail .btn {
+    width: 51.54%;
+    margin: 16px auto 0;
+  }
+  .howto .step li.step_item .detail .img_area {
+    margin: 12px 0 4px;
+    letter-spacing: -.4em;
+  }
+  .howto .step li.step_item .detail .img_area .img {
+    display: inline-block;
+    width: 30.7%;
+    margin: 0 0.5% 4px;
+    background: #d6d6d6;
+  }
+  .howto .step li.step_item .detail .att {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  .howto .step li.step_item .detail .attlist {
+    margin: 16px 5.9% 0;
+    text-align: left;
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  .howto .attention {
+    text-align: left;
+    margin: 0 5.3%;
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  .howto .attention h3 {
+    margin-bottom: 5px;
+  }
+}
+
+.tweet .tweet_area ul.tw_content li.tw_item {
+  background: -moz-linear-gradient(65deg, #ffe9f6, #e7f5ff);
+  background: -webkit-linear-gradient(65deg, #ffe9f6, #e7f5ff);
+  background: linear-gradient(25deg, #ffe9f6, #e7f5ff);
+}
+.tweet .tweet_area ul.tw_content li.tw_item .tw_item_content {
+  text-align: left;
+  background: #fff;
+}
+.tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_name {
+  color: #fa70b5;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+}
+.tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_day {
+  color: #898989;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+}
+@media only screen and (min-width: 769px) {
+  .tweet {
+    padding: 0 0 85px;
+  }
+  .tweet h2 {
+    margin: 102px auto 52px;
+  }
+  .tweet h2 img {
+    height: 74px;
+  }
+  .tweet .tweet_area ul.tw_content {
+    max-width: 980px;
+    margin: auto;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item {
+    vertical-align: top;
+    width: 310px;
+    margin: 0 0 24px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content {
+    padding: 20px;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_img {
+    margin: 0 0 16px;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_img img {
+    max-width: 100%;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_name {
+    margin: 0 0 9px;
+    font-size: 14px;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_day {
+    font-size: 11px;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_txt {
+    margin: 14px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .tweet .tweet_area .more_btn {
+    margin-top: 50px;
+    -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  .tweet .tweet_area .more_btn img {
+    width: 200px;
+  }
+  .tweet .tweet_area .more_btn:hover {
+    opacity: .6;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tweet {
+    padding: 0 0 84px;
+  }
+  .tweet h2 {
+    margin: 64px auto 32px;
+  }
+  .tweet .tweet_area ul.tw_content {
+    max-width: 355px;
+    margin: auto;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item {
+    vertical-align: top;
+    width: 173px;
+    margin: 0 0 10px;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content {
+    padding: 12px 7%;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_img {
+    margin: 0 auto 16px;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_img img {
+    width: auto;
+    max-width: 100%;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_name {
+    margin: 0 0 9px;
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_day {
+    font-size: 10px;
+    font-size: 1.0rem;
+  }
+  .tweet .tweet_area ul.tw_content li.tw_item .tw_item_content .tw_txt {
+    margin: 10px 0 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .tweet .tweet_area .more_btn {
+    width: 37.6%;
+    margin: 20px auto 0;
+  }
+}
+
+.official {
+  text-align: center;
+}
+.official a {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 769px) {
+  .official a {
+    overflow: hidden;
+    padding: 60px 0 59px;
+    background: url("../img/bnrbg_pc.jpg") top center;
+    background-size: 100% auto;
+    -webkit-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  .official a img {
+    height: 120px;
+  }
+  .official a:hover {
+    background-position: center -40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .official a {
+    overflow: hidden;
+    padding: 30px 0 29px;
+    background: url("../img/bnrbg_sp.jpg") center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .official a img {
+    width: 69.33%;
+  }
+}
+
+footer {
+  position: relative;
+  text-align: left;
+}
+@media only screen and (min-width: 769px) {
+  footer {
+    padding: 28px 30px 30px;
+  }
+  footer .footer_link li {
+    display: inline-block;
+    border-right: 1px solid #a4a4a4;
+    margin-right: 7px;
+    padding-right: 9px;
+    font-size: 11.5px;
+  }
+  footer .footer_link li:last-child {
+    border-right: 0;
+  }
+  footer .footer_link li a {
+    color: #666;
+    -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  footer .footer_link li a:hover {
+    opacity: .6;
+  }
+  footer .att {
+    margin-top: 12px;
+    font-size: 11.5px;
+  }
+  footer .copyright {
+    margin-top: 18px;
+    font-size: 10.5px;
+  }
+  footer .pagetop {
+    position: absolute;
+    right: 34px;
+    bottom: 34px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+  footer .pagetop img {
+    width: 50px;
+  }
+  footer .pagetop:hover {
+    opacity: .6;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    position: relative;
+    padding: 35px 2%;
+    background-color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+  footer .footer_link li {
+    display: inline-block;
+    border-right: 1px solid #a4a4a4;
+    margin-right: 7px;
+    padding-right: 9px;
+  }
+  footer .footer_link li:last-child {
+    border-right: 0;
+    margin-right: 0;
+  }
+  footer .footer_link li a {
+    color: #666;
+  }
+  footer .att {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  footer .copyright {
+    margin-top: 20px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  footer .pagetop {
+    width: 50px;
+    margin: 25px auto 0;
+  }
+}

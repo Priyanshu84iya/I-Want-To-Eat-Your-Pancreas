@@ -1,0 +1,170 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px;
+}
+
+.talksession_head {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  text-align: center;
+}
+.talksession_head .lead {
+  margin: 60px auto 40px;
+  font-size: 25px;
+  color: #fa70b5;
+  line-height: 1.6;
+}
+.talksession_head .sub_lead {
+  margin: 40px auto 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.talksession_tab {
+  text-align: center;
+  margin-top: 65px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.talksession_tab ul {
+  letter-spacing: -.4rem;
+}
+.talksession_tab ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px;
+  letter-spacing: normal;
+}
+
+.talksession_tab ul li a {
+  padding-bottom: 1px;
+  -webkit-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+.talksession_tab ul li a:hover {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+
+.talksession_tab ul li a {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 18px 0 0 0;
+  background: #fff;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fa70b5;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fccfe6;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.talksession_tab ul li a:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #fde7f2;
+  border-radius: 3px;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
+}
+.talksession_tab ul li.current a {
+  background: #fc97ca;
+  border-color: #fc97ca;
+  color: #fff;
+}
+.talksession_tab ul li.current a {
+  cursor: default;
+  pointer-events: none;
+  color: #fff;
+}
+.talksession_tab ul li.current:before {
+  border-color: #fdbfde;
+}
+
+
+
+.talksession_schedule {
+  width: 980px;
+  margin: auto;
+  text-align: center;
+}
+.talksession_schedule .item {
+  margin: 40px auto 0;
+}
+.talksession_schedule .item h4 {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fff;
+  background: #98D3F5;
+  font-size: 20px;
+  letter-spacing: 0.05rem;
+  margin-bottom: 28px;
+  padding: 10px 0 9px;
+}
+.talksession_schedule .item .item_theater {
+  margin: 0 auto 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px dashed #d8d8d8;
+}
+.talksession_schedule .item .item_theater:last-child {
+  border-bottom: 0px;
+}
+.talksession_schedule .item .item_theater .place {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-size: 18px;
+  color: #fa70b5;
+}
+.talksession_schedule .item .item_theater .code_p {
+  font-size: 12px;
+  padding-top: 6px;
+  /* color: #9a9a9a; */
+}
+.talksession_schedule .item .item_theater .info {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.talksession_ticket {
+  width: 980px;
+  margin: 84px auto 0;
+  padding: 50px 0 46px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.talksession_ticket .item_ticket {
+  padding: 0 50px;
+}
+.talksession_ticket .item_ticket dl dt {
+  float: left;
+  width: 110px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fa70b5;
+  font-size: 18px;
+}
+.talksession_ticket .item_ticket dl dd {
+  float: left;
+  width: 770px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.talksession_ticket .item_ticket dl dd span {
+  font-size: 12px;
+}
+.talksession_ticket hr {
+  width: 880px;
+  height: 0;
+  margin: 26px auto 30px;
+  border: 0;
+  border-top: 1px dashed #d8d8d8;
+}

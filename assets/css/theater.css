@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px;
+}
+
+.theater_head {
+  text-align: center;
+}
+
+.theater_head .caution {
+  line-height: 1.7;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.theater_head .theater_category {
+  margin-top: 65px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.theater_head .theater_category ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.theater_head .theater_category ul li:after {
+  content: '';
+  position: absolute;
+  right: -27px;
+  top: -2px;
+  width: 20px;
+  height: 100%;
+  background: url(../img/in/item_sakura.png) no-repeat center center;
+}
+
+.theater_head .theater_category ul li.cate_now {
+  color: #fa70b5;
+}
+
+.theater_head .theater_category ul li:last-child {
+  margin-right: 0;
+}
+
+.theater_head .theater_category ul li:last-child:after {
+  display: none;
+}
+
+.theater_head .update {
+  width: 980px;
+  margin: 30px auto 0;
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.theater_head .txt_end {
+  width: 980px;
+  margin: 30px auto 60px;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: bold;
+  color: #fa70b5;
+}
+
+.theater_list {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.theater .btn_theater {
+  position: relative;
+  text-align: center;
+}
+.theater .btn_theater a {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  margin: 10px auto 0;
+  padding: 18px 0 0 0;
+  background: #fff;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fa70b5;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fccfe6;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.theater .btn_theater a:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #fde7f2;
+  border-radius: 3px;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
+}
+.theater .btn_theater a:hover {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+
+.theater_list .theater-container {
+  margin: 50px auto 70px;
+}
+
+.theater_list .theater__title {
+  text-align: center;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #98d3f5;
+}
+
+.theater_list table {
+  margin-top: 18px;
+  width: 100%;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.theater_list table tr td {
+  padding: 13px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.theater_list table tr td.area {
+  width: 170px;
+  text-align: center;
+}
+
+.theater_list table tr td.place {
+  padding-left: 30px;
+}
+
+.theater_list table tr td.pre {
+  width: 340px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.theater_list table tr td.sub {
+  width: 250px;
+  text-align: left;
+}
+
+.theater_list table tr td.other {
+  width: 150px;
+  text-align: left;
+}
+.theater_list table tr td a {
+  text-decoration: underline;
+}
+
+.theater_list table tr td a:hover {
+  text-decoration: none;
+}
+
+.theater_list table tr.t-t__head td {
+  padding: 4px 0;
+  background-color: #98d3f5;
+  color: #fff;
+  border-bottom: 0;
+}
+
+.theater_list table tr.t-t__head td.place {
+  padding-left: 30px;
+}

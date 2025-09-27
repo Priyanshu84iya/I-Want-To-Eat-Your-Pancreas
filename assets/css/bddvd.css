@@ -1,0 +1,349 @@
+.pc {
+  display: block
+}
+
+.sp {
+  display: none
+}
+
+@media only screen and (max-width: 768px) {
+  .pc {
+    display: none
+  }
+  .sp {
+    display: block
+  }
+}
+
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px
+}
+
+.bddvd_head {
+  text-align: center
+}
+
+.bddvd_wrap {
+  position: relative;
+  width: 980px;
+  min-height: 400px;
+  margin: 60px auto 40px
+}
+
+.bddvd_main {
+  position: relative
+}
+
+.bddvd_main .figure_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px
+}
+
+.bddvd_main .figure_wrap figure {
+  margin-bottom: 10px;
+}
+.bddvd_main .figure_wrap figure img {
+  width: 420px
+}
+
+.bddvd_main .figure_wrap .btn_buy {
+  text-align: center
+}
+
+.bddvd_main .figure_wrap .btn_buy a {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  height: 50px;
+  margin: 10px auto 0;
+  padding: 18px 0 0 0;
+  background: #fc97ca;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fc97ca;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease
+}
+
+.bddvd_main .figure_wrap .btn_buy a:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 350px;
+  height: 40px;
+  border: 1px solid #fde7f2;
+  border-radius: 3px;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease
+}
+
+.bddvd_main .info {
+  padding-left: 460px;
+  min-height: 1000px;
+}
+
+.bddvd_main .info h4 {
+  width: 390px
+}
+
+.bddvd_main .info .day {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  margin-top: 18px;
+  font-size: 17px
+}
+
+.bddvd_main .info .price {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.8
+}
+
+.bddvd_main .info .prize h5 {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #66bff2;
+  margin: 16px 0 8px 0.8em;
+  font-size: 16px
+}
+
+.bddvd_main .info .prize h5:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.8em;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #98d3f5;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%)
+}
+
+.bddvd_main .info .prize ul li {
+  font-size: 14px;
+  line-height: 1.8
+}
+
+.bddvd_main .info .disc .disc_item p {
+  padding: 14px 0 8px;
+  font-size: 14px;
+  font-weight: 700
+}
+
+.bddvd_main .info .disc .disc_item ul li {
+  font-size: 14px;
+  line-height: 1.8
+}
+
+.bddvd_main .info .disc .disc_item ul.big li {
+  padding: 0 0 14px 1em;
+  text-indent: -1em;
+  font-size: 12px
+}
+
+.bddvd_main .info .disc .disc_item ul.big li strong {
+  font-size: 14px
+}
+
+.bddvd_main .btn_event {
+  text-align: center
+}
+
+.bddvd_main .btn_event a {
+  position: relative;
+  display: inline-block;
+  width: 470px;
+  height: 74px;
+  margin: 42px auto 0;
+  padding: 19px 0 0;
+  background: #fc97ca;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fc97ca;
+  border-radius: 3px;
+  font-size: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bddvd_main .btn_event a:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 460px;
+  height: 64px;
+  border: 1px solid #fde7f2;
+  border-radius: 3px;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
+}
+
+.bddvd_main .btn_event a span {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.bddvd_tokuten {
+  margin: 52px auto 0;
+  padding: 54px 0 0;
+  border-top: 1px dashed #ccc
+}
+
+.bddvd_tokuten h5 {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  margin: 0 auto 46px;
+  text-align: center;
+  color: #fa70b5;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.6
+}
+
+.bddvd_tokuten .tokuten_all .all_in {
+  position: relative
+}
+
+.bddvd_tokuten .tokuten_all .all_in h6 {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  margin: 33px 0 14px;
+  font-size: 17px
+}
+
+.bddvd_tokuten .tokuten_all .all_in figure {
+  width: 980px;
+  margin: auto
+}
+
+.bddvd_tokuten .tokuten_all .all_in .att_list {
+  font-size: 12px
+}
+
+.bddvd_tokuten .tokuten_all .all_in .att_list li {
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 1.6
+}
+
+.bddvd_tokuten .tokuten_all .all_in .store_list strong {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #66bff2;
+  margin: 23px 0 8px 0.8em;
+  font-size: 16px
+}
+
+.bddvd_tokuten .tokuten_all .all_in .store_list strong:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.8em;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #98d3f5;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%)
+}
+
+.bddvd_tokuten .tokuten_all .all_in .store_list span {
+  font-size: 14px;
+  line-height: 1.8
+}
+
+.bddvd_tokuten .tokuten_bundle {
+  margin: 52px auto 0;
+  padding: 54px 0 0;
+  border-top: 1px dashed #ccc
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list {
+  letter-spacing: -0.4em
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li {
+  display: inline-block;
+  width: 300px;
+  margin: 0 40px 58px 0;
+  vertical-align: top;
+  letter-spacing: normal
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li:nth-child(3n) {
+  margin: 0 0 58px 0
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .shop {
+  position: relative;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  height: 42px;
+  background: #98d3f5;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.2
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .shop strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .shop span {
+  font-size: 11px
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li figure {
+  margin: 30px 0 0
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .goods {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.4
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .goods_info {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.6
+}
+
+.bddvd_tokuten .tokuten_bundle .shop_list li .pkg_price {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.6
+}
+
+.bddvd_tokuten .tokuten_bundle .att_list {
+  font-size: 12px
+}
+
+.bddvd_tokuten .tokuten_bundle .att_list li {
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 1.6
+}

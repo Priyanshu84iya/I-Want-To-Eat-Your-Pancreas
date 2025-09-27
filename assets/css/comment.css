@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px;
+}
+
+.comment_head {
+  text-align: center;
+  padding-bottom: 106px;
+}
+
+.comment_area dl {
+  width: 980px;
+  margin: 0 auto 58px;
+}
+.comment_area dl dt {
+  float: left;
+  width: 172px;
+  line-height: 1.7;
+}
+.comment_area dl dt .name {
+  font-size: 22px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  font-weight: 400;
+}
+.comment_area dl dt .belonging {
+  font-size: 14px;
+}
+.comment_area dl dd {
+  float: left;
+  width: 805px;
+  margin-top: 3px;
+  padding-left: 30px;
+  border-left: 1px solid #d6d6d6;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.comment_area dl dd .qs {
+  display: inline-block;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #66bff2;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.comment .btn_return {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.comment .btn_return a {
+  padding-bottom: 1px;
+  -webkit-transition: opacity .8s ease;
+  transition: opacity .8s ease;
+}
+.comment .btn_return a:hover {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+
+.comment .btn_return a {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 18px 0 0 0;
+  background: #fff;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  color: #fa70b5;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fccfe6;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.comment .btn_return a:before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #fde7f2;
+  border-radius: 3px;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
+}

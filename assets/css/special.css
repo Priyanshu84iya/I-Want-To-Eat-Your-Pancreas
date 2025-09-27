@@ -1,0 +1,96 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px;
+}
+
+.special_head {
+  text-align: center;
+}
+
+.special_wrap {
+  position: relative;
+  width: 980px;
+  min-height: 400px;
+  margin: 60px auto 40px;
+}
+.special_wrap .special_list {
+  width: 980px;
+  margin: 90px auto 0;
+  text-align: center;
+  letter-spacing: -.4em;
+  font-size: 0;
+}
+.special_wrap .special_list li {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 0 0 48px 40px;
+  vertical-align: top;
+  letter-spacing: normal;
+  text-align: left;
+}
+.special_wrap .special_list li:nth-child(3n-2) {
+  margin-left: 0;
+}
+.special_wrap .special_list li a {
+  position: relative;
+  display: block;
+}
+.special_wrap .special_list li a:after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 18px;
+  height: 25px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: url(../img/common/petal_s2.png) no-repeat center center;
+  -webkit-transform: translate(10px, -20px) rotateY(90deg) rotate(15deg);
+  transform: translate(10px, -20px) rotateY(90deg) rotate(15deg);
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transition: -webkit-transform .01s ease-out .3s, opacity .3s ease;
+  transition: transform .01s ease-out .3s, opacity .3s ease;
+}
+.special_wrap .special_list li a:hover .special_day, .special_wrap .special_list li a:hover .special_title {
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+.special_wrap .special_list li a:hover:after {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: -webkit-transform .5s ease-out, opacity .3s ease;
+  transition: transform .5s ease-out, opacity .3s ease;
+  -webkit-transform: translate(0) rotateY(0deg) rotate(15deg);
+  transform: translate(0) rotateY(0deg) rotate(15deg);
+}
+.special_wrap .special_list li .special_img {
+  width: 100%;
+  padding-bottom: 66.6666%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.special_wrap .special_list li .special_day {
+  font-family: "Libre Baskerville", serif;
+  padding: 10px 0 2px;
+  word-break: break-all;
+  line-height: 1.5;
+  font-size: 14px;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.special_wrap .special_list li .special_title {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  word-break: break-all;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #000;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}

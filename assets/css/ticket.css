@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  padding-top: 80px;
+  margin-top: 120px;
+}
+
+.ticket_head {
+  text-align: center;
+}
+
+.ticket_wrap {
+  position: relative;
+  width: 980px;
+  min-height: 400px;
+  margin: 60px auto 40px;
+  padding: 40px 600px 40px 0;
+  border-top: 1px dashed #ccc;
+}
+
+.ticket_wrap .ticket_img {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 580px;
+}
+
+.ticket_wrap .ticket_title {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  line-height: 1.6;
+  font-size: 28px;
+  color: #fa70b5;
+  font-weight: 500;
+}
+
+.ticket_wrap .ticket_day {
+  margin-top: 5px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  line-height: 1.6;
+  font-size: 22px;
+  color: #fa70b5;
+  font-weight: 500;
+}
+
+.ticket_wrap .ticket_txt {
+  margin-top: 15px;
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.ticket_wrap .att {
+  margin-top: 17px;
+  line-height: 1.9;
+  font-size: 12px;
+}
+
+.ticket_wrap .att li {
+  text-indent: -1em;
+  padding-left: 1em;
+}

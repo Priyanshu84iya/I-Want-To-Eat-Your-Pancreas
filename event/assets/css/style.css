@@ -1,0 +1,903 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+@media only screen and (min-width: 751px) {
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+  }
+  header .head_sns {
+    position: relative;
+    padding: 10px 0 9px;
+    border-left: 1px solid #e5e5e5;
+    padding-right: 30px;
+    text-align: right;
+  }
+  header .head_sns li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  header .head_sns li img {
+    height: 18px;
+  }
+
+  h2 img {
+    margin: auto;
+  }
+
+  .main_area {
+    position: relative;
+    margin-top: 37px;
+    background: url(../img/pc/bg_main.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .main_area .kv {
+    position: relative;
+    padding-right: 50%;
+  }
+  .main_area .section_content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .main_area .section_content h1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main_area .section_content h1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .event {
+    padding: 0 0 118px;
+  }
+  .event h2 {
+    padding: 120px 0 60px;
+  }
+  .event .section_content {
+    width: 824px;
+    margin: auto;
+    border-top: 1px dashed #d6d6d6;
+    text-align: left;
+  }
+  .event .section_content dl {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    padding: 16px 0 15px;
+    border-bottom: 1px dashed #d6d6d6;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .event .section_content dl dt {
+    float: left;
+    width: 158px;
+    color: #fa70b5;
+  }
+  .event .section_content dl dd {
+    float: left;
+    width: 666px;
+    font-weight: 400;
+  }
+  .event .section_content dl dd a {
+    text-decoration: underline;
+  }
+  .event .section_content dl dd ul.att_list, .event .section_content dl dd span.small {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+  }
+  .event .section_content dl dd ul.att_list li {
+    padding-left: 1rem;
+    text-indent: -1rem;
+  }
+  .form.thanks .lead {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    padding: 16px 0 15px;
+    font-size: 24px;
+    line-height: 1.7;
+  }
+  .form.thanks .att_list {
+    padding: 23px 0 15px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .form {
+    padding: 0 0 118px;
+    background: rgba(250, 145, 197, 0.2);
+  }
+  .form h2 {
+    padding: 120px 0 60px;
+  }
+  .form .section_content {
+    width: 824px;
+    margin: auto;
+  }
+  .form .section_content .form_wrap p.notes {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .form .section_content .form_wrap form {
+    text-align: left;
+  }
+  .form .section_content .form_wrap form dl dt {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    color: #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd {
+    font-size: 14px;
+  }
+  .form .section_content .form_wrap form dl dd.sex {
+    padding-top: 10px;
+  }
+  .form .section_content .form_wrap form dl dd select {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .form .section_content .form_wrap form dl dd select::-ms-expand {
+    display: none;
+  }
+  .form .section_content .form_wrap form dl dd select:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"] {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    width: 9em;
+    font-size: 16px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_zipcode_1, .form .section_content .form_wrap form dl dd input[type="text"].elem_age {
+    width: 80px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_zipcode_2 {
+    width: 100px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"]#element10, .form .section_content .form_wrap form dl dd input[type="text"]#element11 {
+    width: 150px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_address {
+    width: 500px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_text {
+    width: 824px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"]:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd textarea {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    width: 824px;
+    font-size: 16px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd textarea:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd label {
+    cursor: pointer;
+    position: relative;
+    height: 17px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding-left: 20px;
+    display: inline-block;
+  }
+  .form .section_content .form_wrap form dl dd label div {
+    margin-top: 2px;
+  }
+  .form .section_content .form_wrap form dl dd label:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 3;
+  }
+  .form .section_content .form_wrap form dl dd label:after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #fa70b5;
+    z-index: 1;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"], .form .section_content .form_wrap form dl dd label input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    left: -19px;
+    top: 0;
+    margin: 0px;
+    box-shadow: 20px 0 #FFF;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"]:checked, .form .section_content .form_wrap form dl dd label input[type="checkbox"]:checked {
+    box-shadow: none;
+    border-radius: 50%;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"]:focus, .form .section_content .form_wrap form dl dd label input[type="checkbox"]:focus {
+    opacity: 0.2;
+    box-shadow: 20px 0 #FFF;
+    border-radius: 50%;
+  }
+  .form .section_content .form_wrap form .first_area {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #fff;
+  }
+  .form .section_content .form_wrap form .first_area dl {
+    padding: 0 0 30px;
+  }
+  .form .section_content .form_wrap form .first_area dl dt {
+    float: left;
+    width: 158px;
+    padding: 14px 0 0;
+  }
+  .form .section_content .form_wrap form .first_area dl dd {
+    margin-left: 158px;
+  }
+  .form .section_content .form_wrap form .second_area {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #fff;
+  }
+  .form .section_content .form_wrap form .second_area dl dt {
+    padding: 0 0 22px;
+  }
+  .form .section_content .form_wrap form .second_area dl dd {
+    padding: 0 0 30px;
+  }
+  .form .section_content .form_wrap form .btn_submit {
+    text-align: center;
+  }
+  .form .section_content .form_wrap form .btn_submit li {
+    display: inline-block;
+    position: relative;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    margin: 15px 4px 0;
+    background: #fff;
+    text-align: center;
+    letter-spacing: -.03em;
+    border-radius: 3px;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset {
+    border: 1px solid #cdcdcd;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset input {
+    color: #8f8f8f;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit {
+    border: 1px solid #fccfe6;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #fde7f2;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit input {
+    color: #fa70b5;
+  }
+  .form .section_content .form_wrap form .btn_submit li input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    font-weight: bold;
+    background: none;
+    line-height: 50px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 5;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form .btn_submit li input:hover {
+    opacity: .6;
+  }
+  .form .section_content .attention {
+    width: 824px;
+    margin: 50px auto 0;
+    padding: 60px 42px 28px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .form .section_content .attention h3 {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 30px;
+  }
+  .form .section_content .attention h3 span {
+    font-size: 12px;
+  }
+  .form .section_content .attention h4 {
+    margin: 36px 0 4px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+  }
+  .form .section_content .attention .att_list {
+    font-size: 12px;
+    text-align: left;
+  }
+  .form .section_content .attention .att_list li {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    line-height: 2;
+  }
+
+  .intro {
+    padding: 0 0 118px;
+    background: url(../img/common/bg_intro.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+  }
+  .intro h2 {
+    padding: 120px 0 100px;
+  }
+  .intro .section_content {
+    width: 824px;
+    margin: auto;
+  }
+  .intro .section_content .txt {
+    margin-bottom: 100px;
+  }
+
+  .staffcast {
+    padding: 0 0 130px;
+  }
+  .staffcast h2 {
+    padding: 120px 0 50px;
+  }
+
+  .trailer {
+    padding: 0 0 118px;
+  }
+  .trailer h2 {
+    padding: 0 0 50px;
+  }
+  .trailer iframe {
+    width: 824px;
+    height: 463px;
+  }
+
+  .official {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .official img {
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+  }
+  .official img:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 10px;
+    font-size: 1.0rem;
+  }
+
+  header {
+    display: none;
+  }
+
+  .main_area {
+    position: relative;
+  }
+  .main_area .section_content {
+    position: relative;
+  }
+  .main_area .section_content h1 {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .event {
+    padding: 0 0 74px;
+  }
+  .event h2 {
+    padding: 75px 0 30px;
+  }
+  .event .section_content {
+    width: 100%;
+    margin: auto;
+    border-top: 1px dashed #d6d6d6;
+    text-align: left;
+  }
+  .event .section_content dl {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    padding: 16px 4.135% 15px;
+    border-bottom: 1px dashed #d6d6d6;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .event .section_content dl dt {
+    color: #fa70b5;
+    margin-bottom: 4px;
+  }
+  .event .section_content dl dd {
+    font-weight: 400;
+  }
+  .event .section_content dl dd a {
+    text-decoration: underline;
+  }
+  .event .section_content dl dd span.time {
+    font-size: 1.3rem;
+  }
+  .event .section_content dl dd ul.att_list, .event .section_content dl dd span.small {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.3rem;
+  }
+  .event .section_content dl dd ul.att_list {
+    margin-top: 3px;
+  }
+  .event .section_content dl dd ul.att_list li {
+    line-height: 1.8;
+    padding-left: 1rem;
+    text-indent: -1rem;
+  }
+  .form.thanks .lead {
+      font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+      padding: 16px 4.135% 15px;
+      font-size: 1.9rem;
+  }
+
+  .form.thanks ul.att_list {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin: 16px 0 15px;
+  }
+  .form.thanks ul.att_list li {
+    line-height: 1.8;
+    padding-left: 1rem;
+    text-indent: -1rem;
+  }
+
+  .form {
+    padding: 0 0 74px;
+    background: rgba(250, 145, 197, 0.2);
+  }
+  .form h2 {
+    padding: 75px 0 30px;
+  }
+  .form .section_content {
+    width: 100%;
+    margin: auto;
+  }
+  .form .section_content .form_wrap {
+    margin: auto;
+  }
+  .form .section_content .form_wrap p.notes {
+    margin-bottom: 26px;
+    font-size: 1rem;
+  }
+  .form .section_content .form_wrap form {
+    text-align: left;
+  }
+  .form .section_content .form_wrap form dl {
+    padding: 0 4.135% 24px;
+  }
+  .form .section_content .form_wrap form dl dt {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    color: #fa70b5;
+    letter-spacing: -0.06rem;
+    line-height: 1.3;
+  }
+  .form .section_content .form_wrap form dl dd {
+    font-size: 1.3rem;
+  }
+  .form .section_content .form_wrap form dl dd select {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .form .section_content .form_wrap form dl dd select::-ms-expand {
+    display: none;
+  }
+  .form .section_content .form_wrap form dl dd select:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"] {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    width: 43%;
+    font-size: 1.6rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_zipcode_1, .form .section_content .form_wrap form dl dd input[type="text"].elem_age {
+    width: 20%;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_zipcode_2 {
+    width: 30%;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_address {
+    width: 100%;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"].elem_text {
+    width: 100%;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"]#element10 {
+    margin-bottom: 10px;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"]#element10, .form .section_content .form_wrap form dl dd input[type="text"]#element11 {
+    width: 50%;
+  }
+  .form .section_content .form_wrap form dl dd input[type="text"]:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd textarea {
+    font-family: "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+    padding: 1%;
+    width: 100%;
+    font-size: 1.6rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd textarea:focus {
+    border: 1px solid #fa70b5;
+  }
+  .form .section_content .form_wrap form dl dd label {
+    cursor: pointer;
+    position: relative;
+    height: 17px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding-left: 20px;
+    display: inline-block;
+  }
+  .form .section_content .form_wrap form dl dd label div {
+    margin-top: 2px;
+  }
+  .form .section_content .form_wrap form dl dd label:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 3;
+  }
+  .form .section_content .form_wrap form dl dd label:after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #fa70b5;
+    z-index: 1;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"], .form .section_content .form_wrap form dl dd label input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    left: -19px;
+    top: 0;
+    margin: 0px;
+    box-shadow: 20px 0 #FFF;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"]:checked, .form .section_content .form_wrap form dl dd label input[type="checkbox"]:checked {
+    box-shadow: none;
+    border-radius: 50%;
+  }
+  .form .section_content .form_wrap form dl dd label input[type="radio"]:focus, .form .section_content .form_wrap form dl dd label input[type="checkbox"]:focus {
+    opacity: 0.2;
+    box-shadow: 20px 0 #FFF;
+    border-radius: 50%;
+  }
+  .form .section_content .form_wrap form .first_area {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #fff;
+  }
+  .form .section_content .form_wrap form .second_area {
+    margin-bottom: 28px;
+    border-bottom: 1px dashed #fff;
+  }
+  .form .section_content .form_wrap form .btn_submit {
+    text-align: center;
+  }
+  .form .section_content .form_wrap form .btn_submit li {
+    display: inline-block;
+    position: relative;
+    width: 45.333%;
+    height: 48px;
+    line-height: 48px;
+    margin-top: 15px;
+    margin: 0 2px 0;
+    background: #fff;
+    text-align: center;
+    letter-spacing: -.03em;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset {
+    border: 1px solid #cdcdcd;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 96%;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
+  .form .section_content .form_wrap form .btn_submit li.reset input {
+    color: #8f8f8f;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit {
+    border: 1px solid #fccfe6;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 96%;
+    height: 38px;
+    border: 1px solid #fde7f2;
+    border-radius: 3px;
+  }
+  .form .section_content .form_wrap form .btn_submit li.submit input {
+    color: #fa70b5;
+  }
+  .form .section_content .form_wrap form .btn_submit li input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    font-weight: bold;
+    background: none;
+    line-height: 48px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .form .section_content .attention {
+    width: 91.73%;
+    margin: 30px auto 0;
+    padding: 27px 0 30px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .form .section_content .attention h3 {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto 18px;
+  }
+  .form .section_content .attention h3 span {
+    font-size: 1rem;
+  }
+  .form .section_content .attention h4 {
+    margin: 26px 5.3% 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .form .section_content .attention .att_list {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 5.3%;
+  }
+  .form .section_content .attention .att_list li {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    line-height: 2;
+  }
+
+  .intro {
+    padding: 0 0 74px;
+    background: url(../img/common/bg_intro.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+  }
+  .intro h2 {
+    padding: 75px 0 28px;
+  }
+  .intro .section_content .txt {
+    margin-bottom: 45px;
+  }
+
+  .staffcast {
+    padding: 0 0 74px;
+  }
+  .staffcast h2 {
+    padding: 75px 0 28px;
+  }
+
+  .trailer {
+    padding: 0 0 74px;
+  }
+  .trailer h2 {
+    padding: 0 0 28px;
+  }
+  .trailer .section_content {
+    width: 91.73%;
+    margin: auto;
+  }
+  .trailer .section_content .video_wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  .trailer .section_content .video_wrap iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .official {
+    position: relative;
+    z-index: 5;
+  }
+}

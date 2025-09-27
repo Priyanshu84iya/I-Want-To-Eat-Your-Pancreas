@@ -1,0 +1,396 @@
+@charset "UTF-8";
+.retweet_wrap {
+  position: relative;
+  z-index: 5;
+}
+.retweet_wrap .lead {
+  font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ 明朝", "ＭＳ Ｐ明朝", serif;
+  line-height: 1.6;
+}
+.retweet_wrap .btn_back a {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background: none;
+  height: 70px;
+  line-height: 70px;
+  width: 300px;
+  border: 1px solid #bcbcbc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.list {
+	margin: 16px auto;
+	text-align: center;
+	display: block;
+}
+.list .text {
+	text-align: left;
+	display: inline-block;
+    line-height: 1.6;
+}
+
+.retweet_wrap .form_wrap {
+  margin: 60px auto 0;
+  text-align: left;
+}
+.retweet_wrap .form_wrap .notes {
+  font-size: 14px;
+}
+.retweet_wrap .form_wrap dl {
+  padding: 5px 0;
+}
+.retweet_wrap .form_wrap dl dd select {
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+  padding: 1%;
+  color: #666;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.retweet_wrap .form_wrap dl dd select::-ms-expand {
+  display: none;
+}
+.retweet_wrap .form_wrap dl dd select:focus {
+  border: 1px solid #fa70b5;
+}
+.retweet_wrap .form_wrap dl dd input {
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+  padding: 1%;
+  width: 9em;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.retweet_wrap .form_wrap dl dd.goodsname input {
+  padding: 6px 0 0;
+  width: 9em;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  border: 0;
+  color: #000;
+}
+.retweet_wrap .form_wrap dl dd input:focus {
+  border: 1px solid #fa70b5;
+  background: none;
+}
+.retweet_wrap .form_wrap .submit {
+  text-align: center;
+  margin-top: 50px;
+}
+.retweet_wrap .form_wrap .submit input {
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+  background: none;
+  height: 70px;
+  line-height: 70px;
+  width: 300px;
+  outline: none;
+  border: 1px solid #bcbcbc;
+  color: #666;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.retweet_wrap .att_list {
+  margin: 100px auto 0;
+}
+.retweet_wrap .att_list dt {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.retweet_wrap .att_list dd {
+  margin-top: 5px;
+  text-align: left;
+  font-size: 12px;
+  text-indent: -1em;
+  margin-left: 1em;
+}
+.retweet_wrap .att_list dd a {
+  text-decoration: underline;
+  color: #fa70b5;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.retweet_wrap .att_list dd a:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.retweet_wrap .thanks {
+  width: 500px;
+  margin: 70px auto;
+  padding: 35px 0;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+  .content {
+    position: relative;
+    padding-top: 80px;
+    margin-top: 120px;
+  }
+  .content .sec_title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .retweet_wrap h4 {
+    margin: 60px auto 30px;
+    text-align: center;
+  }
+  .retweet_wrap .lead {
+    display: block;
+    margin: 30px auto 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-size: 20px;
+  }
+  .retweet_wrap .lead2 {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+  }
+  .retweet_wrap .period {
+    display: block;
+    width: 550px;
+    margin: 0 auto 60px;
+    padding: 16px 0 15px;
+    border-top: 1px solid #e3e4e1;
+    border-bottom: 1px solid #e3e4e1;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+  }
+  .retweet_wrap .btn_back a {
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .retweet_wrap .btn_back a:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+  .retweet_wrap .form_wrap {
+    width: 670px;
+    margin: auto;
+  }
+  .retweet_wrap .form_wrap dl {
+    padding: 5px 0;
+  }
+  .retweet_wrap .form_wrap dl dt {
+    width: 160px;
+    padding: 26px 0 0;
+    float: left;
+  }
+  .retweet_wrap .form_wrap dl dd {
+    padding-top: 15px;
+    margin-left: 160px;
+  }
+  .retweet_wrap .form_wrap dl dd input.elem_zipcode_1, .retweet_wrap .form_wrap dl dd input.elem_age {
+    width: 90px;
+  }
+  .retweet_wrap .form_wrap dl dd input.elem_tel {
+    width: 70px;
+  }
+  .retweet_wrap .form_wrap dl dd input.elem_zipcode_2 {
+    width: 130px;
+  }
+  .retweet_wrap .form_wrap dl dd input.elem_address, .retweet_wrap .form_wrap dl dd input.elem_email {
+    width: 510px;
+  }
+  .retweet_wrap .form_wrap dl dd input.elem_text {
+    width: 300px;
+  }
+  .retweet_wrap .form_wrap .submit input {
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .retweet_wrap .form_wrap .submit input:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+  .retweet_wrap .att_list {
+    width: 670px;
+    line-height: 1.6;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    position: relative;
+    padding-top: 65px;
+    margin-top: 88px;
+  }
+  .content .sec_title {
+    width: 89%;
+    margin: 0 auto 30px;
+  }
+  .content .sec_title img {
+    width: 100%;
+    height: auto;
+  }
+  .retweet_wrap .lead {
+    display: block;
+    margin: 0 5.5% 16px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+  }
+  .retweet_wrap .lead2 {
+    display: block;
+    margin: 0 5.5% 30px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .retweet_wrap .period {
+    display: block;
+    width: 89%;
+    margin: 0 auto 60px;
+    padding: 16px 0 15px;
+    border-top: 1px solid #e3e4e1;
+    border-bottom: 1px solid #e3e4e1;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .retweet_wrap .btn_back a {
+    font-size: 15px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .form_wrap {
+    width: 92%;
+    margin-top: 60px;
+  }
+  .form_wrap .notes {
+    font-size: 13px;
+  }
+  .form_wrap dl {
+    padding: 10px 0;
+  }
+  .form_wrap dl dt {
+    padding: 4.2% 0 0;
+    width: 7.5em;
+    float: left;
+    font-size: 14px;
+    height: 100%;
+    letter-spacing: 0.001em;
+  }
+  .form_wrap dl dd {
+    margin-left: 8.5em;
+    font-size: 14px;
+    padding-top: 1.2%;
+  }
+  .form_wrap dl dd select {
+    font-size: 14px;
+  }
+  .form_wrap dl dd input {
+    font-size: 14px;
+  }
+  .form_wrap dl dd input.elem_fullname_1 {
+    margin-bottom: 3.4%;
+    width: 80%;
+  }
+  .form_wrap dl dd input.elem_fullname_2 {
+    width: 80%;
+  }
+  .form_wrap dl dd input.elem_zipcode_1, .form_wrap dl dd input.elem_zipcode_2, .form_wrap dl dd input.elem_age {
+    width: 60px;
+  }
+  .form_wrap dl dd input.elem_tel {
+    width: 50px;
+  }
+  .form_wrap dl dd input.elem_zipcode_2 {
+    width: 80px;
+  }
+  .form_wrap dl dd input.elem_address, .form_wrap dl dd input.elem_email {
+    width: 88%;
+  }
+  .form_wrap dl dd input.elem_text {
+    width: 80%;
+  }
+  .form_wrap .submit input {
+    font-size: 15px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .retweet_wrap .form_wrap dl dd.goodsname input {
+    font-size: 14px;
+  }
+
+  .att_list {
+    width: 92%;
+    margin: 60px auto 0;
+    line-height: 1.6;
+  }
+  .att_list dt {
+    font-size: 16px;
+  }
+  .att_list dd {
+    font-size: 13px;
+  }
+
+  .thanks {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  h3.sec_title {
+      color: #ff5e75;
+      font-size: 20px;
+      text-align: center;
+  }
+  dd.line{
+      border-bottom: #E91E63;
+      border-style: double;
+  }
+
+   dt.days{
+   background-color: #fce0e4;
+  }
+
+}

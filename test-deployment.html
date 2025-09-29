@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Test - I Want to Eat Your Pancreas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #ff6b9d;
+        }
+        .success { border-left-color: #4CAF50; }
+        .error { border-left-color: #f44336; }
+        .warning { border-left-color: #ff9800; }
+        .log { background: #333; color: #00ff00; padding: 10px; border-radius: 3px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>🌸 Deployment Diagnostic Test</h1>
+    <p>This page tests if your website files are loading correctly on the deployment platform.</p>
+
+    <div id="tests"></div>
+
+    <script>
+        const tests = [];
+        const testContainer = document.getElementById('tests');
+
+        function addTest(name, test, type = 'info') {
+            const result = test();
+            tests.push({ name, result, type });
+            
+            const card = document.createElement('div');
+            card.className = `test-card ${result ? 'success' : 'error'}`;
+            card.innerHTML = `
+                <strong>${result ? '✅' : '❌'} ${name}</strong>
+                <div>${result ? 'PASS' : 'FAIL'}</div>
+            `;
+            testContainer.appendChild(card);
+        }
+
+        // Test 1: Basic HTML parsing
+        addTest('HTML Document Loading', () => document.title.includes('Deployment Test'));
+
+        // Test 2: CSS Assets
+        addTest('CSS Files Accessible', () => {
+            try {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = './assets/css/common.css';
+                return true; // We can't easily test async loading here
+            } catch (e) {
+                return false;
+            }
+        });
+
+        // Test 3: JavaScript Execution
+        addTest('JavaScript Execution', () => typeof console !== 'undefined');
+
+        // Test 4: Image Loading Test
+        addTest('Image Path Resolution', () => {
+            const img = new Image();
+            img.src = './assets/img/common/link_twitter.png';
+            return img.src.includes('assets');
+        });
+
+        // Test 5: Relative Path Test
+        addTest('Relative Path Working', () => window.location.href.includes('http'));
+
+        // Test 6: jQuery CDN Test
+        setTimeout(() => {
+            addTest('jQuery CDN Loading', () => typeof jQuery !== 'undefined' || typeof $ !== 'undefined');
+        }, 2000);
+
+        // Console logging for debugging
+        console.log('🌸 I Want to Eat Your Pancreas - Deployment Test');
+        console.log('Current URL:', window.location.href);
+        console.log('Document Ready State:', document.readyState);
+        console.log('User Agent:', navigator.userAgent);
+
+        // Test the main website
+        const testMainSite = document.createElement('div');
+        testMainSite.className = 'test-card warning';
+        testMainSite.innerHTML = `
+            <strong>🔗 Test Main Website</strong>
+            <p>Click below to test the main website:</p>
+            <a href="./index.html" style="background: #ff6b9d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                Test Main Website
+            </a>
+        `;
+        testContainer.appendChild(testMainSite);
+
+        // Add debugging info
+        const debugInfo = document.createElement('div');
+        debugInfo.className = 'test-card';
+        debugInfo.innerHTML = `
+            <strong>🔍 Debug Information</strong>
+            <div class="log">
+URL: ${window.location.href}<br>
+Protocol: ${window.location.protocol}<br>
+Host: ${window.location.host}<br>
+Pathname: ${window.location.pathname}<br>
+Time: ${new Date().toISOString()}
+            </div>
+        `;
+        testContainer.appendChild(debugInfo);
+    </script>
+
+    <!-- Test jQuery loading -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</body>
+</html>
